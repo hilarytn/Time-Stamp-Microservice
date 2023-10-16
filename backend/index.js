@@ -13,11 +13,13 @@ app.get("/", (req, res) => {
     console.log('The Landing Page endpoint has been hit!')
 })
 app.get("/api/:date?", (req, res) => {
+    console.log(typeof(req.params.date));
         if (req.params.date) {
-            const unixTime = new Date(req.params.date);
+            const parsedDate = parseInt(req.params.date)
+            const unixTime = new Date(parsedDate);
             res.json({
-                unix : unixTime,
-                utc: new Date(req.params.date)
+                unix : req.params.date,
+                utc: unixTime
             })
         }
     console.log('The Home Page endpoint has been hit!')
