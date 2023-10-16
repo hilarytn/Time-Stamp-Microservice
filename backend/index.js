@@ -12,8 +12,14 @@ app.get("/", (req, res) => {
     res.send('Welcome to this site!');
     console.log('The Landing Page endpoint has been hit!')
 })
-app.get("/home", (req, res) => {
-    res.send('Welcome Home!');
+app.get("/api/:date?", (req, res) => {
+        if (req.params.date) {
+            const unixTime = new Date(req.params.date);
+            res.json({
+                unix : unixTime,
+                utc: new Date(req.params.date)
+            })
+        }
     console.log('The Home Page endpoint has been hit!')
 })
 
