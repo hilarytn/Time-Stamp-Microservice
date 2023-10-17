@@ -13,6 +13,7 @@ app.get("/", (req, res) => {
     console.log('The Landing Page endpoint has been hit!')
 })
 app.get("/api/:date?", (req, res) => {
+    try {
         if (req.params.date) {
             const rawDate = req.params.date;
             const strToInt = parseInt(rawDate);
@@ -23,23 +24,15 @@ app.get("/api/:date?", (req, res) => {
                     utc: utcTime.toUTCString()
                 })
             }
-            else {
-                res.json({ error : "Invalid Date" })
-            }
-            //const parsedDate = parseInt(rawDate)
-            //const unixTime = new Date(rawDate);
-            //res.json({
-               // unix : rawDate,
-               // utc: unixTime
-           }
-           else {
-            res.json({
-                unix: Date.now(),
-                utc: new Date()
-            })
-           }
+    }}catch (error) {
+        res.json({ error : "Invalid Date" })  
+    })
+ 
+    res.json({
+        unix: Date.now(),
+        utc: new Date()
+    })
         //}
     console.log('The Home Page endpoint has been hit!')
-});
 
  app.listen (PORT, HOST, () => console.log(`Server running on ${HOST}:${PORT}`))
