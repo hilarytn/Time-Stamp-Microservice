@@ -19,4 +19,4 @@ Make sure you have Node.js and npm installed on your system.
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/time-stamp-microservice.git
+   git clone https://github.com/hilarytn/time-stamp-microservice.git
