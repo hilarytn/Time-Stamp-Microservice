@@ -26,7 +26,7 @@ app.get("/api/:date?", (req, res) => {
             }
     }}catch (error) {
         res.json({ error : "Invalid Date" })  
-    })
+    }})
  
     res.json({
         unix: Date.now(),
