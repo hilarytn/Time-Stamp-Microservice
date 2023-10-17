@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+title {
+    background-color: purple;
+}
+
+.box-1 {
+    margin: auto;
+}
+
+.div-1, .div-2 {
+    text-align: center;
+    background-color: aqua;
+    background: linear-gradient(90deg, #adbbbb, #61cccc, #25d6d6);
+    width: 20vw;
+    max-width: 20vw;
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+}
+
+.div-1 {
+    margin-top: 10px;
+}
+
+.p1 {
+    text-align: center;
+   
+}
+
+.div-2 {
+    background: linear-gradient(90deg ,#25d6d6, #61cccc, #adbbbb );
+    /*display: inline-block; */
+}
+
+.flex-div {
+    display: flex;
+    margin: 10px;
+    background-color: gray;
+    height: 50vh;
+    width: 30vw;
+    align-items: center;
+
+}
+
+.inner-div {
+    background-color: aqua;
+    background: linear-gradient(90deg, #adbbbb, #61cccc, #25d6d6);
+    padding: 8px;
+    margin: 3px;
+    font-size: 18px;
+
+}
