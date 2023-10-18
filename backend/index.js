@@ -9,6 +9,6 @@ const app = express();
 const PORT = process.env.PORT;
 const HOST = process.env.HOST;
 
-app.use("/api/:date?", router)
+app.use("/api", router)
 
 app.listen(PORT, HOST, () => console.log(`Server running on ${HOST}:${PORT}`));
