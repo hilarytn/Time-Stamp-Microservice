@@ -26,7 +26,6 @@ Make sure you have Node.js and npm installed on your system.
 
     ```bash
     npm install
-
     npm start
-
-   Your application should now be running locally at http://localhost:3000. You can access it in your web browser.
+    
+Your application should now be running locally at http://localhost:3000. You can access it in your web browser.
