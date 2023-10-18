@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Flexing the Box</title>
+    <script src="app.js"></script>
+    <title>Time-Stamp Microservice</title>
 </head>
 <body>
-    <div class="box-1">
-        <div class="div-1">
-            <p class="p1">My name is Hilary Titus Naor. I am a good boy and I know it.</p>
-        </div>
-        <div class="div-1 div-2">
-            <p class="p1">This is the latest box and I know what I want</p>
-        </div>
-    </div>
-    <div class="flex-div">
-        <div class="inner-div div1">Hilary</div>
-        <div class="inner-div div2">Iorfa</div>
-        <div class="inner-div div3">Kater</div>
-        <div class="inner-div div4">Sesughter</div>
-    </div>
+    <h1 class="main-heading">Timestamp Microservice</h1>
+    <hr>
+    <div class="container">
+        <h3>Example Usage:</h3>
+        <ul>
+          <li><a href="api/2015-12-25" class="date-link">[project url]/api/2015-12-25</a></li>
+          <li><a href="api/1451001600000" id="date-link">[project url]/api/1451001600000</a></li>
+        </ul>
+  
+        <h3>Example Output:</h3>
+        <p>
+          <code>{"unix":1451001600000, "utc":"Fri, 25 Dec 2015 00:00:00 GMT"}</code>
+        </p>
+      </div>
+      <div class="footer">
+        <p>By <a href="https://www.hilarytn.tech/">www.hilarytn.tech</a></p>
+      </div>
 </body>
 </html>
