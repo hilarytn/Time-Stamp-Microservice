@@ -20,7 +20,7 @@ Make sure you have Node.js and npm installed on your system.
 
    ```bash
    git clone https://github.com/hilarytn/time-stamp-microservice.git
-   cd time-stamp-microservice/backend
+   cd time-stamp-microservice
 
 2. Install Dependencies:
 
