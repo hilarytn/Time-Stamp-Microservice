@@ -20,3 +20,13 @@ Make sure you have Node.js and npm installed on your system.
 
    ```bash
    git clone https://github.com/hilarytn/time-stamp-microservice.git
+   cd time-stamp-microservice/backend
+
+2. Install Dependencies:
+
+    ```bash
+    npm install
+
+    npm start
+
+   Your application should now be running locally at http://localhost:3000. You can access it in your web browser.
